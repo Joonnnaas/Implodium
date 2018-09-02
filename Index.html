@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Untitled Document</title>
+		<link rel="stylesheet" href="css/header.css">
+		<link rel="stylesheet" href="css/Main.css">
+		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> 
+	</head>
+
+	<body>
+		<script src="js/hover.js"></script>
+		<script src="js/mobildeDropDown.js"></script>
+		
+		<header>
+			<div id="menu">
+				<div class="menuPoint" id="home" onMouseOver="hoverOn(0)" onMouseOut="hoverOff(0)">
+					<span>Home</span>
+					<div class="hover"></div>
+				</div>
+				<div class="menuPoint" id="discord" onMouseOver="hoverOn(1)" onMouseOut="hoverOff(1)">
+					<span>Discord</span>
+					<div class="hover"></div>
+				</div>
+				<div class="menuPoint" id="logo" onMouseOver="hoverOn(7)" onMouseOut="hoverOff(7)">
+					<div></div>
+				</div>
+				<div class="menuPoint" id="projects" onMouseOver="hoverOn(2)" onMouseOut="hoverOff(2)">
+					<span>Projects</span>
+					<div class="hover"></div>
+				</div>
+				<div class="menuPoint" id="about" onMouseOver="hoverOn(3)" onMouseOut="hoverOff(3)">
+					<span>About</span>
+					<div class="hover"></div>
+				</div>
+				<div class="menuPoint" id="mobileMenu" onClick="openMobileMenu()">
+					<div class="stroke" id="stroke1"></div>
+					<div class="stroke" id="stroke2"></div>
+					<div class="stroke" id="stroke3"></div>
+				</div>
+				
+				<div id="mobileDropDown">
+					<div>Home</div>
+					<div>Discord</div>
+					<div>Projects</div>
+					<div>About</div>
+				</div>
+				
+			</div>
+		</header>
+	</body>
+</html>

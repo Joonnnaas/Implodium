@@ -1,0 +1,130 @@
+header {
+	position: fixed;
+	width: 100%;
+	height: 100px;
+}
+
+#menu {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	
+	height: 100px; width: 100%;
+	background-color: #FFFFFF;
+	box-shadow: 0 10px 8px #888888;
+}
+
+#mobileMenu {
+	display: none;
+}
+
+#mobileDropDown {
+	display: none;
+}
+
+.menuPoint {
+	cursor: pointer;
+	
+	width: 20%;
+	height: 100px;
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	
+	text-align: center;
+	font-size: 30px;
+	font-family: 'Oswald', sans-serif;
+}
+
+#logo {
+	height:unset;
+	display: flex;
+	justify-content: center;
+}
+
+#logo div {
+	position: relative;
+	top: 60px;
+	height: 200px;
+	width: 200px;
+	box-shadow: 0 10px 8px #888888;
+	background-image: url("../img/logos/Implo-Logo.png");
+	background-size: cover;
+	border-radius: 100%;
+}
+
+.hover {
+	display: block;
+	position: absolute;
+	bottom: 0;
+	
+	width: 20%;
+	height: 0;
+	
+	background-color: #EE4950;
+	transition: all 0.5s;
+}
+
+@media only screen and (max-width: 1230px) {
+	#menu {
+		
+	}
+	
+	.menuPoint {
+		display: none;
+		width: 100px;
+	}
+	
+	#logo {display: block;}
+	#mobileMenu {display: block;}
+	
+	#logo div {
+		top: 0; left: 10px;
+		height: 80px;
+		width: 80px;
+	}
+	
+	#mobileMenu {
+		position: absolute;
+		right: 10px;
+		
+		height: 50px;
+		width: 70px;
+	}
+	
+	.stroke {
+		width: 100%;
+		height: 20%;
+		background-color: black;
+		margin-bottom: 10%;
+	}
+	
+	#mobileDropDown {
+		height: 400px; width: 100%;
+		
+		position: absolute;
+		top: 100px;
+		
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		
+		background-color: #DADADA;
+	}
+	
+	#mobileDropDown div {
+		height: 100px;
+		width: 100%;
+		
+		position: relative;
+		
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		
+		font-size: 30px;
+		font-family: 'Oswald', sans-serif;
+	}
+}
